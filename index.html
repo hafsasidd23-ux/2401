@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 🤍</title>
+  <style>
+    body {
+      background: #fff0f6;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 30px;
+    }
+    #letter {
+      display: none;
+      white-space: pre-wrap;
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: #ff9acb;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Enter the code 💗</h2>
+<p>(hint: us)</p>
+
+<input type="password" id="code" placeholder="password">
+<br>
+<button onclick="unlock()">Unlock 🤍</button>
+
+<div id="letter">
+<h3>Happy 1 Month 🤍</h3>
+<p>
+I still don’t understand how something so random became something this important. One moment you were just a name, a coincidence, and the next you were someone my heart recognized without trying. We clicked so easily, like the universe skipped the awkward parts and placed us straight into comfort. I didn’t plan to like you or look for love — it just happened.
+With you, I feel safe being myself. I don’t overthink every word or hide parts of me. I can be emotional, goofy, quiet, and still feel understood. Somewhere between our late talks and honest moments, I fell for you quietly but deeply.
+You became my calm, the place my mind goes when everything slows down. Being with you feels familiar, like something I’ve always known. One month may sound small, but it means something real to me. Thank you for choosing me, for being you, and for making this feel steady and beautiful. Happy one month 🤍
+</p>
+</div>
+
+<script>
+function unlock() {
+  if (document.getElementById("code").value === "🫶") {
+    document.getElementById("letter").style.display = "block";
+  } else {
+    alert("Wrong code 😭 try again");
+  }
+}
+</script>
+
+</body>
+</html>
